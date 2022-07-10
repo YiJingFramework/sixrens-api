@@ -23,7 +23,8 @@ namespace SixRens.Api.实体
         EarthlyBranch 月支 { get; }
         EarthlyBranch 日支 { get; }
         EarthlyBranch 时支 { get; }
-        EarthlyBranch 昼夜 { get; }
+
+        bool 昼占 { get; }
         I旬 旬所在 { get; }
         EarthlyBranch 月将 { get; }
     }
