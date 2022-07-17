@@ -5,7 +5,7 @@ namespace SixRens.Api
 {
     public interface I参考插件 : I插件
     {
-        IEnumerable<string> 生成占断参考(
+        IEnumerable<I占断参考> 生成占断参考(
             I年月日时 年月日时,
             地支盘 基础盘,
             地支盘 地盘,
