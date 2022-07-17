@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SixRens.Api
+﻿namespace SixRens.Api
 {
     [Serializable]
     public class 起课失败异常 : Exception

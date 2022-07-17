@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SixRens.Api
+﻿namespace SixRens.Api
 {
     public interface I插件
     {
@@ -22,5 +16,6 @@ namespace SixRens.Api
      * 6 年命
      * 7 神煞
      * 8 课体
+     * 9 参考
      */
 }

@@ -1,11 +1,6 @@
 ﻿using SixRens.Api.实体;
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using YiJingFramework.FiveElements;
 using YiJingFramework.StemsAndBranches;
 
@@ -28,12 +23,12 @@ namespace SixRens.Api.工具
 
             IEnumerator<EarthlyBranch> IEnumerable<EarthlyBranch>.GetEnumerator()
             {
-                return this.AsEnumerable().GetEnumerator();
+                return AsEnumerable().GetEnumerator();
             }
 
             IEnumerator IEnumerable.GetEnumerator()
             {
-                return this.AsEnumerable().GetEnumerator();
+                return AsEnumerable().GetEnumerator();
             }
         }
         private class 三合局 : I三合局
