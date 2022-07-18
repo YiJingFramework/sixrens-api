@@ -5,7 +5,7 @@ namespace SixRens.Api
 {
     public interface I神煞插件 : I插件
     {
-        IEnumerable<I神煞> 支持的神煞 { get; }
+        IEnumerable<I神煞题目> 支持的神煞 { get; }
         IEnumerable<I神煞> 获取神煞(
             I年月日时 年月日时,
             地支盘 基础盘,

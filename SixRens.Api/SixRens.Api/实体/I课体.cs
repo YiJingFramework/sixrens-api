@@ -1,7 +1,7 @@
 ﻿namespace SixRens.Api.实体
 {
-    public interface I课体
+    public interface I课体 : I课体题目
     {
-        string 课体名 { get; }
+        bool 是此课体 { get; }
     }
 }
