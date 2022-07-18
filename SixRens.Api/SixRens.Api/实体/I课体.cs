@@ -2,6 +2,6 @@
 {
     public interface I课体
     {
-        public string 课体名 { get; }
+        string 课体名 { get; }
     }
 }

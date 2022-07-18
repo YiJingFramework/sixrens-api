@@ -5,6 +5,7 @@ namespace SixRens.Api
 {
     public interface I课体插件 : I插件
     {
+        IEnumerable<I课体> 支持的课体 { get; }
         IEnumerable<I课体> 识别课体(
             I年月日时 年月日时,
             地支盘 基础盘,
