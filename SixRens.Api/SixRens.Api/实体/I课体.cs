@@ -1,7 +1,9 @@
-﻿namespace SixRens.Api.实体
+﻿using YiJingFramework.StemsAndBranches;
+
+namespace SixRens.Api.实体
 {
-    public interface I课体 : I课体题目
+    public interface I课体
     {
-        bool 是此课体 { get; }
+        string 课体名 { get; }
     }
 }

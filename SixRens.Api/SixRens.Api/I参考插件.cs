@@ -6,7 +6,7 @@ namespace SixRens.Api
     public interface I参考插件 : I插件
     {
         IEnumerable<I占断参考题目> 支持的占断参考 { get; }
-        IEnumerable<I占断参考> 生成占断参考(
+        I占断参考内容 生成占断参考(
             I年月日时 年月日时,
             地支盘 基础盘,
             地支盘 地盘,
@@ -17,6 +17,7 @@ namespace SixRens.Api
             I年命? 课主年命,
             IReadOnlyList<I年命> 对象年命,
             IReadOnlyList<I神煞> 神煞列表,
-            IReadOnlyList<I课体> 课体列表);
+            IReadOnlyList<I课体> 课体列表,
+            I占断参考题目 占断参考题目);
     }
 }
