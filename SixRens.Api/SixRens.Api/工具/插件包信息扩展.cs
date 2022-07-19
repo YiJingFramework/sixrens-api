@@ -30,7 +30,7 @@ namespace SixRens.Api.工具
             DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
             WriteIndented = true
         };
-        public static string 生成插件包信息文件内容(I插件包信息 插件包信息, bool 检查内容 = true)
+        public static string 生成插件包信息文件内容(this I插件包信息 插件包信息, bool 检查内容 = true)
         {
             ArgumentNullException.ThrowIfNull(插件包信息);
 
