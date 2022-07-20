@@ -1,5 +1,4 @@
-﻿using SixRens.Api.实体;
-using YiJingFramework.FiveElements;
+﻿using YiJingFramework.FiveElements;
 using YiJingFramework.StemsAndBranches;
 
 namespace SixRens.Api.工具

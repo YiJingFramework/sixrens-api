@@ -1,5 +1,4 @@
-﻿using SixRens.Api.实体;
-using System.Collections;
+﻿using System.Collections;
 using System.Diagnostics;
 using YiJingFramework.FiveElements;
 using YiJingFramework.StemsAndBranches;

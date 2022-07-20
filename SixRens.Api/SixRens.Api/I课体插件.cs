@@ -8,9 +8,8 @@ namespace SixRens.Api
         IEnumerable<I课体> 支持的课体 { get; }
         IEnumerable<I课体> 识别课体(
             I年月日时 年月日时,
-            地支盘 基础盘,
-            地支盘 地盘,
-            地支盘 天盘,
+            I地盘 地盘,
+            I天盘 天盘,
             I四课 四课,
             I三传 三传,
             I天将盘 天将盘,

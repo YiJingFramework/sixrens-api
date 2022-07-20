@@ -5,9 +5,8 @@ namespace SixRens.Api
 {
     public interface I天盘插件 : I插件
     {
-        地支盘 获取天盘(
+        I天盘 获取天盘(
             I年月日时 年月日时,
-            地支盘 基础盘,
-            地支盘 地盘);
+            I地盘 地盘);
     }
 }

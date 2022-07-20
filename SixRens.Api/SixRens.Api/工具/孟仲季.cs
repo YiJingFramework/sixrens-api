@@ -1,4 +1,4 @@
-﻿namespace SixRens.Api.实体
+﻿namespace SixRens.Api.工具
 {
     public enum 孟仲季
     {

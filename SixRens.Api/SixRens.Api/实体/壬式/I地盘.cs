@@ -2,8 +2,8 @@
 
 namespace SixRens.Api.实体.壬式
 {
-    public interface I天将盘
+    public interface I地盘
     {
-        天将 取乘将(EarthlyBranch 天神);
+        EarthlyBranch 取地支(EarthlyBranch 位置);
     }
 }
