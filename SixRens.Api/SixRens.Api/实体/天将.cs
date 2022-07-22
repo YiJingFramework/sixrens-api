@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using YiJingFramework.StemsAndBranches;
 
 namespace SixRens.Api.实体
 {
@@ -7,7 +8,7 @@ namespace SixRens.Api.实体
         private readonly int 序号;
         private 天将(int 序号)
         {
-            this.序号 = 序号;
+            this.序号 = (序号 % 12 + 12) % 12;
         }
         public static 天将 贵人 => new(0);
         public static 天将 螣蛇 => new(1);
@@ -58,9 +59,9 @@ namespace SixRens.Api.实体
             };
         }
 
-        public static explicit operator int(天将 earthlyBranch)
+        public static explicit operator int(天将 天将)
         {
-            return earthlyBranch.序号;
+            return 天将.序号;
         }
 
         public static explicit operator 天将(int 序号)
