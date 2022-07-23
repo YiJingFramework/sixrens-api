@@ -7,8 +7,7 @@ namespace SixRens.Api.工具
         public static EarthlyBranch 寄宫(this HeavenlyStem 干)
         {
             return new EarthlyBranch(
-                干.Index switch
-                {
+                干.Index switch {
                     1 => 3, // 甲课寅合
                     2 => 5, // 乙课辰，
                     3 or 5 => 6, // 丙戊课巳不须论，

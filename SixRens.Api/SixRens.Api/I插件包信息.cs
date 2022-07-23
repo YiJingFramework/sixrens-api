@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SixRens.Api
+﻿namespace SixRens.Api
 {
     public interface I插件包信息
     {

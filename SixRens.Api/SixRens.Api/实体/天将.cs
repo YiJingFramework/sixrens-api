@@ -1,5 +1,4 @@
 ﻿using System.Diagnostics.CodeAnalysis;
-using YiJingFramework.StemsAndBranches;
 
 namespace SixRens.Api.实体
 {
@@ -36,14 +35,13 @@ namespace SixRens.Api.实体
         public override bool Equals([NotNullWhen(true)] object? obj)
         {
             if (obj is 天将 将)
-                return 序号.Equals(将.序号);
+                return this.序号.Equals(将.序号);
             return false;
         }
 
         public override string ToString()
         {
-            return 序号 switch
-            {
+            return this.序号 switch {
                 0 => "贵人",
                 1 => "螣蛇",
                 2 => "朱雀",
@@ -71,7 +69,7 @@ namespace SixRens.Api.实体
 
         public override int GetHashCode()
         {
-            return 序号.GetHashCode();
+            return this.序号.GetHashCode();
         }
 
         public static bool operator ==(天将 左, 天将 右)

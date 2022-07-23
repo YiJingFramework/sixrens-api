@@ -25,8 +25,7 @@ namespace SixRens.Api.工具
             public string?[]? 插件类 { get; init; }
         }
 
-        private static readonly JsonSerializerOptions serializerOptions = new()
-        {
+        private static readonly JsonSerializerOptions serializerOptions = new() {
             DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
             WriteIndented = true
         };
@@ -34,8 +33,7 @@ namespace SixRens.Api.工具
         {
             ArgumentNullException.ThrowIfNull(插件包信息);
 
-            var 可序列化 = new 可序列化插件包信息()
-            {
+            var 可序列化 = new 可序列化插件包信息() {
                 名称 = 插件包信息.名称,
                 版本号 = 插件包信息.版本号,
                 网址 = 插件包信息.网址,

@@ -20,8 +20,7 @@ namespace SixRens.Api.工具
         }
         public static EarthlyBranch 取被所刑(this EarthlyBranch branch)
         {
-            var index = branch.Index switch
-            {
+            var index = branch.Index switch {
                 4 => 1,
                 11 => 2,
                 6 => 3,
@@ -39,8 +38,7 @@ namespace SixRens.Api.工具
         }
         public static EarthlyBranch 取所刑(this EarthlyBranch branch)
         {
-            var index = branch.Index switch
-            {
+            var index = branch.Index switch {
                 1 => 4,
                 2 => 11,
                 3 => 6,

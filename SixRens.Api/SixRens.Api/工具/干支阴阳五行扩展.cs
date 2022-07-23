@@ -16,8 +16,7 @@ namespace SixRens.Api.工具
             if (branch.Index % 3 == 2)
                 return FiveElement.Earth;
 
-            return (branch.Index / 3) switch
-            {
+            return (branch.Index / 3) switch {
                 0 or 4 => FiveElement.Water,
                 1 => FiveElement.Wood,
                 2 => FiveElement.Fire,

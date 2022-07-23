@@ -19,25 +19,25 @@ namespace SixRens.Api.工具
         public interface I四时局 : IEnumerable<EarthlyBranch>
         {
             EarthlyBranch 孟支 { get; }
-            四时 四时 => 孟支.获取四时();
-            public EarthlyBranch 仲支 => 孟支.Next();
-            public EarthlyBranch 季支 => 孟支.Next(2);
-            public FiveElement 五行 => 孟支.五行();
+            四时 四时 => this.孟支.获取四时();
+            public EarthlyBranch 仲支 => this.孟支.Next();
+            public EarthlyBranch 季支 => this.孟支.Next(2);
+            public FiveElement 五行 => this.孟支.五行();
             private IEnumerable<EarthlyBranch> AsEnumerable()
             {
-                yield return 孟支;
-                yield return 仲支;
-                yield return 季支;
+                yield return this.孟支;
+                yield return this.仲支;
+                yield return this.季支;
             }
 
             IEnumerator<EarthlyBranch> IEnumerable<EarthlyBranch>.GetEnumerator()
             {
-                return AsEnumerable().GetEnumerator();
+                return this.AsEnumerable().GetEnumerator();
             }
 
             IEnumerator IEnumerable.GetEnumerator()
             {
-                return AsEnumerable().GetEnumerator();
+                return this.AsEnumerable().GetEnumerator();
             }
         }
 
@@ -47,8 +47,7 @@ namespace SixRens.Api.工具
 
             internal 四时局(EarthlyBranch 其中一支)
             {
-                孟支 = 其中一支.获取孟仲季() switch
-                {
+                this.孟支 = 其中一支.获取孟仲季() switch {
                     孟仲季.孟 => 其中一支,
                     孟仲季.仲 => 其中一支.Next(-1),
                     _ => 其中一支.Next(-2),
