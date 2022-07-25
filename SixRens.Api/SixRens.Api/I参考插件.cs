@@ -17,6 +17,6 @@ namespace SixRens.Api
             IReadOnlyList<I年命> 对象年命,
             IReadOnlyList<I神煞> 神煞列表,
             IReadOnlyList<I课体> 课体列表,
-            I占断参考题目 占断参考题目);
+            string 占断参考题目);
     }
 }

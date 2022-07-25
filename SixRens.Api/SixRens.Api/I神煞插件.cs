@@ -15,6 +15,6 @@ namespace SixRens.Api
             I天将盘 天将盘,
             I年命? 课主年命,
             IReadOnlyList<I年命> 对象年命,
-            I神煞题目 神煞题目);
+            string 神煞题目);
     }
 }
