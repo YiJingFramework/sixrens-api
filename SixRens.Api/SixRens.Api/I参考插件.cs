@@ -7,6 +7,7 @@ namespace SixRens.Api
     {
         IEnumerable<I占断参考题目> 支持的占断参考 { get; }
         I占断参考内容 生成占断参考(
+            Guid 壬式识别码,
             I年月日时 年月日时,
             I地盘 地盘,
             I天盘 天盘,

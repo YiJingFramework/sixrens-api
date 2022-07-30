@@ -7,6 +7,7 @@ namespace SixRens.Api
     {
         IEnumerable<I课体题目> 支持的课体 { get; }
         I课体内容 识别课体(
+            Guid 壬式识别码,
             I年月日时 年月日时,
             I地盘 地盘,
             I天盘 天盘,
