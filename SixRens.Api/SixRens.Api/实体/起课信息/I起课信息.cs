@@ -1,7 +1,4 @@
-﻿using YiJingFramework.Core;
-using YiJingFramework.StemsAndBranches;
-
-namespace SixRens.Api.实体.起课信息
+﻿namespace SixRens.Api.实体.起课信息
 {
     public interface I起课信息
     {
