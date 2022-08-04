@@ -1,4 +1,4 @@
-﻿namespace SixRens.Api
+﻿namespace SixRens.Api.实体
 {
     [Serializable]
     public class 起课失败异常 : Exception

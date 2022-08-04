@@ -5,12 +5,12 @@ namespace SixRens.Api.工具
 {
     public static class 天盘扩展
     {
-        public sealed class 可逆天盘 : I天盘
+        public sealed class 可逆天盘 : I天地盘
         {
             private readonly Dictionary<EarthlyBranch, EarthlyBranch> 从天神查地支表;
-            private readonly I天盘 天盘;
+            private readonly I天地盘 天盘;
 
-            internal 可逆天盘(I天盘 天盘)
+            internal 可逆天盘(I天地盘 天盘)
             {
                 this.天盘 = 天盘;
                 this.从天神查地支表 = new Dictionary<EarthlyBranch, EarthlyBranch>(12);
@@ -33,13 +33,13 @@ namespace SixRens.Api.工具
                 else
                     return null;
             }
-            EarthlyBranch I天盘.取天神(EarthlyBranch 地盘支)
+            EarthlyBranch I天地盘.取天神(EarthlyBranch 地盘支)
             {
                 return this.天盘.取天神(地盘支);
             }
         }
 
-        public sealed class 完全可逆天盘 : I天盘
+        public sealed class 完全可逆天盘 : I天地盘
         {
             private readonly 可逆天盘 天盘;
 
@@ -62,13 +62,13 @@ namespace SixRens.Api.工具
                 else
                     return default;
             }
-            EarthlyBranch I天盘.取天神(EarthlyBranch 地盘支)
+            EarthlyBranch I天地盘.取天神(EarthlyBranch 地盘支)
             {
                 return this.天盘.取上神(地盘支);
             }
         }
 
-        public static 可逆天盘 可逆化(this I天盘 天盘)
+        public static 可逆天盘 可逆化(this I天地盘 天盘)
         {
             return new 可逆天盘(天盘);
         }
@@ -76,7 +76,7 @@ namespace SixRens.Api.工具
         {
             return new 完全可逆天盘(天盘, 强制生成);
         }
-        public static 完全可逆天盘 完全可逆化(this I天盘 天盘, bool 强制生成 = false)
+        public static 完全可逆天盘 完全可逆化(this I天地盘 天盘, bool 强制生成 = false)
         {
             return 天盘.可逆化().完全化(强制生成);
         }

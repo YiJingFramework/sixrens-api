@@ -1,7 +1,7 @@
 ﻿using YiJingFramework.Core;
 using YiJingFramework.StemsAndBranches;
 
-namespace SixRens.Api.实体
+namespace SixRens.Api.实体.起课信息
 {
     public interface I年命
     {
