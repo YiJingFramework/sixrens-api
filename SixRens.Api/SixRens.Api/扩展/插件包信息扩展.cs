@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace SixRens.Api.工具
+namespace SixRens.Api.扩展
 {
     public static class 插件包信息扩展
     {

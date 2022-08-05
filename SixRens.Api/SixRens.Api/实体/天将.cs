@@ -2,7 +2,7 @@
 
 namespace SixRens.Api.实体
 {
-    public struct 天将 : IComparable<天将>, IEquatable<天将>
+    public readonly struct 天将 : IComparable<天将>, IEquatable<天将>
     {
         private readonly int 序号;
         private 天将(int 序号)
