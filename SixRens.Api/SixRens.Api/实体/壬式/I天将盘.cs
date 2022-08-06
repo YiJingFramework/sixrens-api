@@ -11,6 +11,5 @@ namespace SixRens.Api.实体.壬式
     {
         天将 取乘将(EarthlyBranch 天盘支);
         EarthlyBranch 取乘神(天将 天将);
-        EarthlyBranch 取临地(天将 天将);
     }
 }
